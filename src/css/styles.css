@@ -5,6 +5,8 @@
   |============================
 */
 /* Common styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
@@ -16,3 +18,112 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+body {
+	padding-top: 36px;
+	padding-left: 156px;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #fafafa;
+	color: #212121;
+	line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.form {
+	width: 360px;
+}
+
+.form > label {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 16px;
+}
+
+.form > label input {
+	padding: 8px 16px;
+}
+
+.form fieldset {
+	margin-bottom: 24px;
+}
+
+.form button {
+	width: 100%;
+	background: #4e75ff;
+	padding: 8px 99px;
+	border-radius: 8px;
+	border: none;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 4%;
+}
+
+#datetime-picker {
+	width: 272px;
+	padding: 8px 16px;
+	border-radius: 4px;
+	border: 1px solid #808080;
+	/* display: inline-block !important; */
+	margin-right: 8px;
+}
+
+#datetime-picker + button {
+	padding-top: 8px;
+	padding-right: 16px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	background: #4e75ff;
+	border: none;
+	color: #ffffff;
+	border-radius: 8px;
+}
+#datetime-picker + button:disabled {
+	background: #cfcfcf;
+	color: #989898;
+}
+
+#datetime-picker + button:hover {
+	background: #6c8cff;
+}
+
+.timer {
+	display: flex;
+	width: 346px;
+	gap: 24px;
+}
+
+.timer div {
+	display: flex;
+	flex-direction: column;
+}
+
+.timer div .value {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	letter-spacing: 4%;
+}
+
+.timer div .label {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+}
