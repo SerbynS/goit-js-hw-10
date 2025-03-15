@@ -11,7 +11,6 @@ form.addEventListener('submit', event => {
 
 	new Promise((resolve, reject) => {
 		setTimeout(() => {
-			console.log(delay);
 			if (state === 'fulfilled') {
 				resolve(delay);
 			} else {
